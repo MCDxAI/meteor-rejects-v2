@@ -1,128 +1,208 @@
 <div align="center">
-  <!-- Logo and Title -->
-  <img src="/src/main/resources/assets/rejects/icon.png" alt="logo" width="20%"/>
-  <h1>Rejects²</h1>
-  <p>Rejects² is the updated, modern continuation of Meteor Rejects. <br>This is not associated with the original developers</p>
+
+<!-- Logo and Title -->
+<img src="/src/main/resources/assets/rejects/icon.png" alt="logo" width="20%"/>
+
+# Rejects²
+
+An **unofficial, experimental port** of the original [Meteor Rejects](https://github.com/AntiCope/meteor-rejects) addon
+
+<p>
+This continuation is yet not fully tested, and not associated with the original developers.
+</p>
+
+
+## Installation
+
+| Step | Action |
+|:----:|:-------|
+| **1** | Download the latest [release](../../releases) from the releases tab |
+| **2** | Place the JAR file in your `.minecraft/mods` folder |
+| **3** | Ensure you have [Meteor Client](https://meteorclient.com/) installed |
+
+ **Tip:** It is recommended to use the [latest dev build](https://meteorclient.com/download?devBuild=latest) of Meteor Client
+
+<hr />
+
+## New in Rejects²
+
+### New Modules
+
+| Module | Description |
+|:------:|:------------|
+| **AutoSell** | Automatically sells configured items through `/sell` while intelligently pausing combat modules |
+| **CaptchaSolver** | Automatically picks the requested item when captcha containers appear |
+| **ElytraBot** | Threaded elytra autopilot with A* pathfinding, automatic firework refills, and Baritone integration |
+| **RaidTimer** | Shows precise raid timing and handles ominous potion refills automatically for raid farms |
+
+<hr />
+
+## Original Features
+
+### Modules
+
+| Module | Source |
+|:------:|:-------|
+| **AimAssist** | Removed from Meteor in [ee391](https://github.com/MeteorDevelopment/meteor-client/commit/ee391e431f345f253447f425dbc0de8625f88e65) |
+| **AntiBot** | Removed from Meteor in [166fc](https://github.com/MeteorDevelopment/meteor-client/commit/166fccc73e53de6cfdbe41ea58dc593a2f5011f6) |
+| **AntiCrash** | Ported from [Anti-ClientCrasher](https://github.com/wagyourtail/Anti-ClientCrasher) |
+| **AntiSpawnpoint** | Original implementation |
+| **AntiVanish** | Original implementation |
+| **ArrowDmg** | Ported from [Wurst](https://github.com/Wurst-Imperium/Wurst7) |
+| **AutoBedTrap** | Ported from [BleachHack-CupEdition](https://github.com/CUPZYY/BleachHack-CupEdition) |
+| **AutoCraft** | Generalized version of [AutoBedCraft](https://github.com/Anticope/orion) from Orion |
+| **AutoEnchant** | Original implementation |
+| **AutoExtinguish** | Original implementation |
+| **AutoFarm** | Original implementation |
+| **AutoGrind** | Original implementation |
+| **AutoLogin** | Original implementation |
+| **AutoPot** | From [unmerged PR #274](https://github.com/MeteorDevelopment/meteor-client/pull/274) |
+| **AutoSoup** | Ported from [Wurst](https://github.com/Wurst-Imperium/Wurst7) |
+| **AutoTNT** | Original implementation |
+| **AutoWither** | From [unmerged PR #1070](https://github.com/MeteorDevelopment/meteor-client/pull/1070) |
+| **BlockIn** | Original implementation |
+| **BoatGlitch & BoatPhase** | From [unmerged PR #814](https://github.com/MeteorDevelopment/meteor-client/pull/814) |
+| **Boost** | Ported from [Cornos](https://github.com/cornos/Cornos) |
+| **BungeeCordSpoof** | Ported from [LiquidBounce](https://github.com/CCBlueX/LiquidBounce) |
+| **ChatBot** | Original implementation |
+| **ChestAura** | Original implementation |
+| **ChorusExploit** | From [unmerged PR #1727](https://github.com/MeteorDevelopment/meteor-client/pull/1727) |
+| **ColorSigns** | Original implementation |
+| **Confuse** | Original implementation |
+| **CoordLogger** | World events from [JexClient](https://github.com/DustinRepo/JexClient-main) |
+| **CustomPackets** | Original implementation |
+| **ExtraElytra** | Ported from [Wurst](https://github.com/Wurst-Imperium/Wurst7) |
+| **FullFlight** | Antikick bypasses by [CCblueX](https://github.com/CCblueX) & [LiveOverflow](https://github.com/LiveOverflow) |
+| **GamemodeNotifier** | Original implementation |
+| **GhostMode** | From [unmerged PR #1932](https://github.com/MeteorDevelopment/meteor-client/pull/1932) |
+| **Glide** | Ported from [Wurst](https://github.com/Wurst-Imperium/Wurst7) |
+| **InstaMine** | Removed from Meteor in [62cd0](https://github.com/MeteorDevelopment/meteor-client/commit/62cd0461e48a6c50f040bf48de25be1fa4eba77e) |
+| **ItemGenerator** | Ported from [Wurst](https://github.com/Wurst-Imperium/Wurst7) |
+| **InteractionMenu** | Ported from [BleachHack](https://github.com/BleachDrinker420/BleachHack/pull/211) |
+| **Jetpack** | Original implementation |
+| **KnockbackPlus** | Original implementation |
+| **Lavacast** | Original implementation |
+| **LawnBot** | Ported from [JexClient](https://github.com/DustinRepo/JexClient) |
+| **MossBot** | Ported from [BleachHack](https://github.com/BleachDrinker420/BleachHack/pull/211) |
+| **NewChunks** | Ported from [BleachHack](https://github.com/BleachDrinker420/BleachHack) |
+| **NoJumpDelay** | Original implementation |
+| **ObsidianFarm** | From [Meteor ObsidianFarm Addon](https://github.com/VoidCyborg/meteor-obsidian-farm) |
+| **Oresim** | Ported from [Atomic](https://gitlab.com/0x151/atomic) |
+| **PacketFly** | From [unmerged PR #813](https://github.com/MeteorDevelopment/meteor-client/pull/813) |
+| **Painter** | Original implementation |
+| **Rendering** | Original implementation |
+| **RoboWalk** | From [unmerged PR #3015](https://github.com/MeteorDevelopment/meteor-client/pull/3015) |
+| **ShieldBypass** | Original implementation |
+| **SilentDisconnect** | Original implementation |
+| **SkeletonESP** | Ported from [JexClient](https://github.com/DustinRepo/JexClient-main) |
+| **SoundLocator** | Original implementation |
+| **ServerFinder** | Ported from [MeteorAdditions](https://github.com/JFronny/MeteorAdditions) |
+| **TreeAura** | From [unmerged PR #2138](https://github.com/MeteorDevelopment/meteor-client/pull/2138) |
+| **VehicleOneHit** | From [unmerged PR #3539](https://github.com/MeteorDevelopment/meteor-client/pull/3539) |
+
+### Module Modifications
+
+| Module | Enhancement | Source |
+|:------:|:------------|:-------|
+| **NoRender** | `noCommandSuggestions` setting | From [unmerged PR #1347](https://github.com/MeteorDevelopment/meteor-client/pull/1347) |
+| **NoRender** | `disableToasts` setting | Original implementation |
+| **Flight** | `stopMomentum` setting | Original implementation |
+| **AutoSign** | Random characters mode | Ported from [BleachHack](https://github.com/BleachDrinker420/BleachHack) |
+| **Module** | Duplicate module names support | Original implementation |
+| **KillAura** | FOV & invisible filter | Original implementation |
+| **KillAura** | Random Teleport, Hit Chance, Random Delay | Removed from Meteor in [8722e](https://github.com/MeteorDevelopment/meteor-client/commit/8722ef565afa02ca4b6d9710a20fc9fcfd97bf05) |
+| **Alts** | Yggdrasil login support | Original implementation |
+
+### Commands
+
+| Command | Description | Source |
+|:-------:|:------------|:-------|
+| `.center` | Center player on current block | Original implementation |
+| `.clear-chat` | Clear chat history | Removed from Meteor in [9aebf](https://github.com/MeteorDevelopment/meteor-client/commit/9aebf6a0e4ffa739d901c8b8d7f48d07af2fe839) |
+| `.ghost` | Remove ghost blocks | Ported from [AntiGhost](https://github.com/gbl/AntiGhost) |
+| `.save-skin` | Save player skin to file | Original implementation |
+| `.heads` | Spawn decorative heads | Original implementation |
+| `.seed` | Manage world seeds | From [unmerged PR #1300](https://github.com/MeteorDevelopment/meteor-client/pull/1300) |
+| `.setblock` | Set block at position | Original implementation |
+| `.panic` | Disable all modules | Removed from Meteor in [dd5f8](https://github.com/MeteorDevelopment/meteor-client/commit/dd5f88a0dbb2753372bf37c58461b886104dc990) |
+| `.set-velocity` | Modify player velocity | Original implementation |
+| `.teleport` | Teleport to coordinates | Original implementation |
+| `.terrain-export` | Export terrain data | Ported from [BleachHack](https://github.com/BleachDrinker420/BleachHack) |
+| `.kick` | Self-kick from server | Ported from [LiquidBounce](https://github.com/CCBlueX/LiquidBounce) |
+
+### Command Modifications
+
+| Command | Enhancement | Source |
+|:-------:|:------------|:-------|
+| `.server` | Port scanner integration | Ported from [Cornos](https://github.com/cornos/Cornos) |
+| `.locate` | Complete rewrite with seed support | From [unmerged PR #1300](https://github.com/MeteorDevelopment/meteor-client/pull/1300) |
+| `.give` | Item presets | Some presets from [BleachHack](https://github.com/BleachDrinker420/BleachHack) |
+
+### Themes
+
+| Theme | Source |
+|:-----:|:-------|
+| **Meteor Rounded** | From [unmerged PR #619](https://github.com/MeteorDevelopment/meteor-client/pull/619) |
+
+### HUD Elements
+
+| Element | Description |
+|:-------:|:------------|
+| **Radar HUD** | Minimap-style radar overlay |
+
+### Configuration
+
+| Setting | Description |
+|:-------:|:------------|
+| **HTTP Allowed** | Whitelist domains for Meteor's HTTP API |
+| **HTTP User Agent** | Customize HTTP request headers |
+| **Hidden Modules** | Hide modules from GUI (requires restart to unhide) |
+| **Load System Fonts** | Disable for faster launch (requires restart) |
+| **Duplicate Module Names** | Allow multiple modules with same name |
+
+<hr />
+
+## Development
+
+### Requirements
+
+| Dependency | Version |
+|:----------:|:--------|
+| **Minecraft** | 1.21.10 |
+| **Fabric Loader** | 0.17.3+ |
+| **Meteor Client** | 1.21.10-32 |
+
+### Build Instructions
+
+Use Gradle to build:
+```bash
+./gradlew build
+```
+
+Output JAR: `build/libs/meteor-rejects-addon-<version>.jar`
+
+<hr />
+
+## Migration History
+
+This port was accomplished through several major milestones:
+
+| Step | Achievement |
+|:----:|:------------|
+| **1** | Initial migration of modules and GUI to 1.21.10 APIs |
+| **2** | Resolved 300+ compilation errors |
+| **3** | Fixed ChestBlockEntityRenderer crash |
+| **4** | Addon successfully boots, rendering functional |
+| **5** | Added AutoSell & CaptchaSolver, began rebranding |
+| **6** | Added ElytraBot & RaidTimer modules |
+| **7** | Rewrote SkeletonESP for full 1.21.10 compatibility |
+
+<hr />
+
+## License
+
+This project inherits licensing from the original [Meteor Rejects](https://github.com/AntiCope/meteor-rejects).
+
 <hr />
 
 </div>
-
-# How to use
-- Download the latest [release](/../../releases) of the mod from the releases tab.
-- Put it in your `.minecraft/mods` folder where you have installed Meteor.
-
-*Note: It is recommended to use the [latest dev build](https://meteorclient.com/download?devBuild=latest) of meteor while using Rejects²*
-
-# Features
-## Modules
-- AimAssist (Removed from Meteor in [ee391](https://github.com/MeteorDevelopment/meteor-client/commit/ee391e431f345f253447f425dbc0de8625f88e65))
-- AntiBot (Removed from Meteor in [166fc](https://github.com/MeteorDevelopment/meteor-client/commit/166fccc73e53de6cfdbe41ea58dc593a2f5011f6))
-- AntiCrash (Ported from [Anti-ClientCrasher](https://github.com/wagyourtail/Anti-ClientCrasher))
-- AntiSpawnpoint
-- AntiVanish
-- ArrowDmg (Ported from [Wurst](https://github.com/Wurst-Imperium/Wurst7/tree))
-- AutoBedTrap (Ported from [BleachHack-CupEdition](https://github.com/CUPZYY/BleachHack-CupEdition/blob/master/CupEdition-1.17/src/main/java/bleach/hack/module/mods/AutoBedtrap.java))
-- AutoCraft (More generalized version of [AutoBedCraft](https://github.com/Anticope/orion/blob/main/src/main/java/me/ghosttypes/orion/modules/main/AutoBedCraft.java) from orion)
-- AutoEnchant
-- AutoExtinguish
-- AutoFarm
-- AutoGrind
-- AutoLogin
-- AutoPot (Taken from an [unmerged PR](https://github.com/MeteorDevelopment/meteor-client/pull/274))
-- AutoSell (Automatically sells configured items through `/sell` while pausing combat modules)
-- AutoSoup (Ported from [Wurst](https://github.com/Wurst-Imperium/Wurst7/tree))
-- AutoTNT
-- AutoWither (Taken from an [unmerged PR](https://github.com/MeteorDevelopment/meteor-client/pull/1070))
-- BlockIn
-- BoatGlitch & BoatPhase (Taken from an [unmerged PR](https://github.com/MeteorDevelopment/meteor-client/pull/814))
-- Boost (Ported from [Cornos](https://github.com/cornos/Cornos/blob/master/src/main/java/me/zeroX150/cornos/features/module/impl/movement/Boost.java))
-- BungeeCordSpoof (Ported from [LiquidBounce](https://github.com/CCBlueX/LiquidBounce))
-- ChatBot
-- CaptchaSolver (Automatically picks the requested item when captcha containers pop up)
-- ChestAura
-- ChorusExploit (Taken from an [unmerged PR](https://github.com/MeteorDevelopment/meteor-client/pull/1727))
-- ColorSigns
-- Confuse
-- Coord Logger (World events from [JexClient](https://github.com/DustinRepo/JexClient-main/blob/main/src/main/java/me/dustin/jex/feature/mod/impl/misc/CoordFinder.java))
-- Custom Packets
-- Elytra Bot (Threaded Elytra autopilot with pathing, refills, and Baritone assists)
-- Extra Elytra (Ported from [Wurst](https://github.com/Wurst-Imperium/Wurst7/tree))
-- FullFlight (Antikick bypasses by [CCblueX](https://github.com/CCblueX) and [LiveOverflow](https://github.com/LiveOverflow))
-- Gamemode notifier
-- Ghost Mode (Taken from an [unmerged PR](https://github.com/MeteorDevelopment/meteor-client/pull/1932))
-- Glide (Ported from [Wurst](https://github.com/Wurst-Imperium/Wurst7/tree))
-- Insta Mine (Removed from Meteor in [62cd0](https://github.com/MeteorDevelopment/meteor-client/commit/62cd0461e48a6c50f040bf48de25be1fa4eba77e))
-- Item generator (Ported from [Wurst](https://github.com/Wurst-Imperium/Wurst7/tree))
-- InteractionMenu (Ported from [BleachHack](https://github.com/BleachDrinker420/BleachHack/pull/211))
-- Jetpack
-- KnockbackPlus
-- Lavacast
-- LawnBot (Ported from [JexClient](https://github.com/DustinRepo/JexClient/blob/main/src/main/java/me/dustin/jex/feature/mod/impl/world/LawnBot.java))
-- MossBot (Ported from [BleachHack](https://github.com/BleachDrinker420/BleachHack/pull/211))
-- NewChunks (Ported from [BleachHack](https://github.com/BleachDrinker420/BleachHack/blob/master/BleachHack-Fabric-1.17/src/main/java/bleach/hack/module/mods/NewChunks.java))
-- NoJumpDelay
-- ObsidianFarm (Taken from [Meteor ObsidianFarm Addon](https://github.com/VoidCyborg/meteor-obsidian-farm))
-- Oresim (Ported from [Atomic](https://gitlab.com/0x151/atomic))
-- PacketFly (Taken from an [unmerged PR](https://github.com/MeteorDevelopment/meteor-client/pull/813))
-- Painter
-- Rendering
-- RaidTimer (Shows raid timing plus handles ominous potion refills automatically)
-- RoboWalk ((Taken from an [unmerged PR](https://github.com/MeteorDevelopment/meteor-client/pull/3015)))
-- Shield Bypass
-- Silent Disconnect
-- SkeletonESP (Ported from [JexClient](https://github.com/DustinRepo/JexClient-main/blob/main/src/main/java/me/dustin/jex/feature/mod/impl/render/Skeletons.java))
-- SoundLocator
-- Server Finder (Ported from [MeteorAdditions](https://github.com/JFronny/MeteorAdditions))
-- TreeAura (Taken from an [unmerged PR](https://github.com/MeteorDevelopment/meteor-client/pull/2138))
-- VehicleOneHit (Taken from an [unmerged PR](https://github.com/MeteorDevelopment/meteor-client/pull/3539))
-
-### Modifications
-- NoRender
-  - `noCommandSuggestions` (Taken from an [unmerged PR](https://github.com/MeteorDevelopment/meteor-client/pull/1347))
-  - `disableToasts`
-- Flight
-  - `stopMomentum`
-- AutoSign
-  - `Random characters` (Ported from [BleachHack](https://github.com/BleachDrinker420/BleachHack))
-- Module
-  - `Duplicate names`
-- KillAura
-  - `Fov and invisible filter`
-  - `Random Teleport, Hit Chance, Random Delay` (Removed from Meteor in [8722e](https://github.com/MeteorDevelopment/meteor-client/commit/8722ef565afa02ca4b6d9710a20fc9fcfd97bf05))
-- Alts
-  -  `Yggdrasil Login`
-
-## Commands
-- `.center`
-- `.clear-chat` (Removed from meteor in [9aebf](https://github.com/MeteorDevelopment/meteor-client/commit/9aebf6a0e4ffa739d901c8b8d7f48d07af2fe839))
-- `.ghost` (Ported from [AntiGhost](https://github.com/gbl/AntiGhost/blob/fabric_1_16/src/main/java/de/guntram/mcmod/antighost/AntiGhost.java))
-- `.save-skin`
-- `.heads`
-- `.seed` (Taken from an [unmerged PR](https://github.com/MeteorDevelopment/meteor-client/pull/1300))
-- `.setblock`
-- `.panic` (Removed from meteor in [dd5f8](https://github.com/MeteorDevelopment/meteor-client/commit/dd5f88a0dbb2753372bf37c58461b886104dc990))
-- `.set-velocity`
-- `.teleport`
-- `.terrain-export` (Ported from [BleachHack](https://github.com/BleachDrinker420/BleachHack/blob/master/BleachHack-Fabric-1.17/src/main/java/bleach/hack/command/commands/CmdTerrain.java))
-- `.kick` (Ported from [LiquidBounce](https://github.com/CCBlueX/LiquidBounce/blob/nextgen/src/main/kotlin/net/ccbluex/liquidbounce/features/module/modules/exploit/ModuleKick.kt))
-
-### Modifications
-- `.server`
-  - `ports` (Ported from [Cornos](https://github.com/cornos/Cornos/blob/master/src/main/java/me/zeroX150/cornos/features/command/impl/Scan.java))
-- `.locate`
-  - rewrite (Taken from an [unmerged PR](https://github.com/MeteorDevelopment/meteor-client/pull/1300))
-- `.give`
-  - presets (Some presets were taken from [BleachHack](https://github.com/BleachDrinker420/BleachHack/blob/master/BleachHack-Fabric-1.17/src/main/java/bleach/hack/command/commands/CmdGive.java))
-
-## Themes
-- "Meteor Rounded" theme (Taken from an [unmerged PR](https://github.com/MeteorDevelopment/meteor-client/pull/619))
-
-## HUD
-- Radar HUD
-
-## Config
-- `Http Allowed` - Modify what HTTP requests can be made with Meteor's HTTP API
-- `Http User Agent` - Modify the HTTP header of Meteor's HTTP API
-- `Hidden Modules` - Hide modules from module gui. **requires restart when unhiding**
-- `Load System Fonts` - Disabling this for faster launch. You can put font into meteor-client/fonts folder. **requires restart to take effect**
-- `Duplicate Module Names` - Allow duplicate module names. Enable it when you have one module overriding another.

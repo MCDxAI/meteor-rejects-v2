@@ -19,7 +19,8 @@
       "Bash(findstr:*)",
       "Bash(del \"C:\\Users\\Cope\\Documents\\GitHub\\meteor-rejects-1.21.10\\src\\main\\java\\anticope\\rejects\\mixin\\LivingEntityRendererAccessor.java\" \"C:\\Users\\Cope\\Documents\\GitHub\\meteor-rejects-1.21.10\\src\\main\\java\\anticope\\rejects\\mixin\\ModelPartAccessor.java\")",
       "Bash(dir /s /b C:UsersCopeDocumentsGitHubmeteor-rejects-v2srcmainjavaanticope 2)",
-      "Bash(python refresh_references.py:*)"
+      "Bash(python refresh_references.py:*)",
+      "WebFetch(domain:raw.githubusercontent.com)"
     ],
     "deny": [],
     "ask": []
