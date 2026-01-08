@@ -15,7 +15,7 @@ orbit = "0.2.4"
 starscript = "0.2.5"
 
 # SeedFinding
-cubiomes = "1.22.3"
+cubiomes = "1.22.5"
 mc-core = "1.210.0"
 mc-math = "ffd2edcfcc0d18147549c88cc7d8ec6cf21b5b91"
 mc-seed = "1ead6fcefe7e8de4b3d60cd6c4e993f1e8f33409"
