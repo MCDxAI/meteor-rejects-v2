@@ -12,6 +12,7 @@ import meteordevelopment.meteorclient.utils.Utils;
 import meteordevelopment.meteorclient.utils.player.PlayerUtils;
 import net.minecraft.entity.Entity;
 import net.minecraft.util.math.MathHelper;
+import net.minecraft.util.math.Vec3d;
 
 import java.util.Random;
 
@@ -70,9 +71,11 @@ public class RejectsUtils {
             double xDir = Math.cos(Math.toRadians(dir + 90));
             double zDir = Math.sin(Math.toRadians(dir + 90));
 
-            ((IVec3d) event.movement).meteor$setXZ(xDir * speed, zDir * speed);
+            Vec3d currentMovement = event.movement;
+            ((IVec3d) event.movement).meteor$set(xDir * speed, currentMovement.y, zDir * speed);
         } else {
-            ((IVec3d) event.movement).meteor$setXZ(0, 0);
+            Vec3d currentMovement = event.movement;
+            ((IVec3d) event.movement).meteor$set(0, currentMovement.y, 0);
         }
 
         float ySpeed = 0;
