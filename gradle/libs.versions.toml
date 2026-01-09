@@ -1,6 +1,6 @@
 [versions]
 # Mod Properties
-mod-version = "0.4.0"
+mod-version = "0.4.1"
 
 # Minecraft
 minecraft = "1.21.11"
